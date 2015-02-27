@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: f446485c8c332f94bbb9b944133527d6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: group1
+    100002: group2
+    100004: pCube1
+    100006: pCylinder1
+    100008: polySurface1
+    100010: polySurface1 1
+    100012: polySurface2
+    100014: polySurface3
+    100016: pSphere1
+    100018: transform1
+    100020: transform2
+    100022: transform3
+    100024: transform4
+    100026: transform5
+    100028: transform6
+    100030: transform7
+    100032: //RootNode
+    400000: group1
+    400002: group2
+    400004: pCube1
+    400006: pCylinder1
+    400008: polySurface1
+    400010: polySurface1 1
+    400012: polySurface2
+    400014: polySurface3
+    400016: pSphere1
+    400018: transform1
+    400020: transform2
+    400022: transform3
+    400024: transform4
+    400026: transform5
+    400028: transform6
+    400030: transform7
+    400032: //RootNode
+    2300000: polySurface1
+    3300000: polySurface1
+    4300000: polySurface1
+    6400000: polySurface1
+    7400000: vac_rush
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: vac_rush
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group1/pCube1
+        weight: 1
+      - path: group1/pCube1/transform1
+        weight: 1
+      - path: group1/pCylinder1
+        weight: 1
+      - path: group1/pCylinder1/transform3
+        weight: 1
+      - path: group1/pSphere1
+        weight: 1
+      - path: group1/pSphere1/transform2
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: group2/polySurface1 1
+        weight: 1
+      - path: group2/polySurface1 1/transform7
+        weight: 1
+      - path: group2/polySurface2
+        weight: 1
+      - path: group2/polySurface2/transform6
+        weight: 1
+      - path: group2/polySurface3
+        weight: 1
+      - path: group2/polySurface3/transform5
+        weight: 1
+      - path: group2/transform4
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

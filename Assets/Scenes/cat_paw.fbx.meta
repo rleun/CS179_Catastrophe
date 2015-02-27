@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 89f9a13d1e338a0459a3118daa22ed76
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: cat_paw
+    100002: //RootNode
+    100004: pSphere1
+    100006: pSphere1 1
+    100008: pSphere2
+    100010: pSphere3
+    100012: pSphere4
+    100014: pSphere5
+    100016: pSphere8
+    100018: transform1
+    100020: transform2
+    100022: transform3
+    100024: transform4
+    100026: transform5
+    100028: transform6
+    400000: cat_paw
+    400002: //RootNode
+    400004: pSphere1
+    400006: pSphere1 1
+    400008: pSphere2
+    400010: pSphere3
+    400012: pSphere4
+    400014: pSphere5
+    400016: pSphere8
+    400018: transform1
+    400020: transform2
+    400022: transform3
+    400024: transform4
+    400026: transform5
+    400028: transform6
+    2300000: pSphere1
+    3300000: pSphere1
+    4300000: pSphere1
+    7400000: paw_swipe
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: paw_swipe
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cat_paw
+        weight: 1
+      - path: cat_paw/pSphere1 1
+        weight: 1
+      - path: cat_paw/pSphere1 1/transform6
+        weight: 1
+      - path: cat_paw/pSphere2
+        weight: 1
+      - path: cat_paw/pSphere2/transform5
+        weight: 1
+      - path: cat_paw/pSphere3
+        weight: 1
+      - path: cat_paw/pSphere3/transform4
+        weight: 1
+      - path: cat_paw/pSphere4
+        weight: 1
+      - path: cat_paw/pSphere4/transform3
+        weight: 1
+      - path: cat_paw/pSphere5
+        weight: 1
+      - path: cat_paw/pSphere5/transform2
+        weight: 1
+      - path: cat_paw/pSphere8
+        weight: 1
+      - path: cat_paw/pSphere8/transform1
+        weight: 1
+      - path: pSphere1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

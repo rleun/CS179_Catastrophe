@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 9080ea2d01a3f314d9d59f92a4aa4cdc
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BoxContainer
+    100004: NorthLid
+    100006: SouthLid
+    100008: SouthLid1
+    100010: WestLid
+    100012: BoxContainer 1
+    100014: BoxInside
+    100016: BoxOutside
+    100018: NorthLid 1
+    100020: SouthLid 1
+    100022: SouthLid1 1
+    100024: WestLid 1
+    400000: //RootNode
+    400002: BoxContainer
+    400004: NorthLid
+    400006: SouthLid
+    400008: SouthLid1
+    400010: WestLid
+    400012: BoxContainer 1
+    400014: BoxInside
+    400016: BoxOutside
+    400018: NorthLid 1
+    400020: SouthLid 1
+    400022: SouthLid1 1
+    400024: WestLid 1
+    2300000: BoxContainer
+    2300002: NorthLid
+    2300004: SouthLid
+    2300006: SouthLid1
+    2300008: WestLid
+    2300010: BoxContainer 1
+    2300012: NorthLid 1
+    2300014: SouthLid 1
+    2300016: SouthLid1 1
+    2300018: WestLid 1
+    3300000: BoxContainer
+    3300002: NorthLid
+    3300004: SouthLid
+    3300006: SouthLid1
+    3300008: WestLid
+    3300010: BoxContainer 1
+    3300012: NorthLid 1
+    3300014: SouthLid 1
+    3300016: SouthLid1 1
+    3300018: WestLid 1
+    4300000: BoxContainer
+    4300002: NorthLid
+    4300004: SouthLid
+    4300006: WestLid
+    4300008: SouthLid1
+    4300010: BoxContainer
+    4300012: NorthLid
+    4300014: SouthLid
+    4300016: WestLid
+    4300018: SouthLid1
+    6400000: BoxContainer
+    6400002: BoxContainer 1
+    6400004: NorthLid
+    6400006: NorthLid 1
+    6400008: SouthLid
+    6400010: SouthLid 1
+    6400012: SouthLid1
+    6400014: SouthLid1 1
+    6400016: WestLid
+    6400018: WestLid 1
+    7400000: boxOpening
+    7400002: boxClosing
+    7400004: boxClosed
+    7400006: boxOpened
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: boxClosing
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoxInside
+        weight: 1
+      - path: BoxInside/BoxContainer
+        weight: 1
+      - path: BoxInside/NorthLid
+        weight: 1
+      - path: BoxInside/SouthLid
+        weight: 1
+      - path: BoxInside/SouthLid1
+        weight: 1
+      - path: BoxInside/WestLid
+        weight: 1
+      - path: BoxOutside
+        weight: 1
+      - path: BoxOutside/BoxContainer 1
+        weight: 1
+      - path: BoxOutside/NorthLid 1
+        weight: 1
+      - path: BoxOutside/SouthLid 1
+        weight: 1
+      - path: BoxOutside/SouthLid1 1
+        weight: 1
+      - path: BoxOutside/WestLid 1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: boxOpening
+      takeName: Take 001
+      firstFrame: 27
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoxInside
+        weight: 1
+      - path: BoxInside/BoxContainer
+        weight: 1
+      - path: BoxInside/NorthLid
+        weight: 1
+      - path: BoxInside/SouthLid
+        weight: 1
+      - path: BoxInside/SouthLid1
+        weight: 1
+      - path: BoxInside/WestLid
+        weight: 1
+      - path: BoxOutside
+        weight: 1
+      - path: BoxOutside/BoxContainer 1
+        weight: 1
+      - path: BoxOutside/NorthLid 1
+        weight: 1
+      - path: BoxOutside/SouthLid 1
+        weight: 1
+      - path: BoxOutside/SouthLid1 1
+        weight: 1
+      - path: BoxOutside/WestLid 1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: boxClosed
+      takeName: Take 001
+      firstFrame: 27
+      lastFrame: 27.1000023
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoxInside
+        weight: 1
+      - path: BoxInside/BoxContainer
+        weight: 1
+      - path: BoxInside/NorthLid
+        weight: 1
+      - path: BoxInside/SouthLid
+        weight: 1
+      - path: BoxInside/SouthLid1
+        weight: 1
+      - path: BoxInside/WestLid
+        weight: 1
+      - path: BoxOutside
+        weight: 1
+      - path: BoxOutside/BoxContainer 1
+        weight: 1
+      - path: BoxOutside/NorthLid 1
+        weight: 1
+      - path: BoxOutside/SouthLid 1
+        weight: 1
+      - path: BoxOutside/SouthLid1 1
+        weight: 1
+      - path: BoxOutside/WestLid 1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: boxOpened
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 1.10000002
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: BoxInside
+        weight: 1
+      - path: BoxInside/BoxContainer
+        weight: 1
+      - path: BoxInside/NorthLid
+        weight: 1
+      - path: BoxInside/SouthLid
+        weight: 1
+      - path: BoxInside/SouthLid1
+        weight: 1
+      - path: BoxInside/WestLid
+        weight: 1
+      - path: BoxOutside
+        weight: 1
+      - path: BoxOutside/BoxContainer 1
+        weight: 1
+      - path: BoxOutside/NorthLid 1
+        weight: 1
+      - path: BoxOutside/SouthLid 1
+        weight: 1
+      - path: BoxOutside/SouthLid1 1
+        weight: 1
+      - path: BoxOutside/WestLid 1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

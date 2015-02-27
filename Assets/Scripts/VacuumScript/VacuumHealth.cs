@@ -2,7 +2,6 @@
 
 public class VacuumHealth : MonoBehaviour
 {
-
     public int startingHealth;
     public int currentHealth;
 	public AudioClip aliveClip;
@@ -19,8 +18,6 @@ public class VacuumHealth : MonoBehaviour
 	private float elapsedTime;
 	GameObject cat_paw_main;
 
-
-
     void Awake ()
     {
         anim = GetComponent <Animator> ();
@@ -31,7 +28,6 @@ public class VacuumHealth : MonoBehaviour
 		cat_paw_main = GameObject.Find ("Main Camera");
 		vacAudio.clip = aliveClip;
 		startTime = Time.time;
-
     }
 
 	void Start()

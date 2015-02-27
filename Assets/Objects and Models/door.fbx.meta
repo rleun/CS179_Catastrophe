@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 83cf04d0f7fac8e4aa0238d3ebc5a4cd
+guid: 3b578026573dfc249bc5ac141d80d4ef
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: door
-    100002: //RootNode
+    100000: //RootNode
+    100002: door
     100004: door1
     100006: doorknob
     100008: polySurface1
@@ -30,8 +30,7 @@ ModelImporter:
     2300000: polySurface2
     3300000: polySurface2
     4300000: polySurface2
-    6400000: polySurface2
-    7400000: DoorOpen
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -48,63 +47,13 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: DoorOpen
-      takeName: Take 001
-      firstFrame: 1
-      lastFrame: 120
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: door
-        weight: 1
-      - path: door/transform2
-        weight: 1
-      - path: door1
-        weight: 1
-      - path: door1/polySurface1
-        weight: 1
-      - path: door1/polySurface1/transform4
-        weight: 1
-      - path: door1/polySurface2 1
-        weight: 1
-      - path: door1/polySurface2 1/transform5
-        weight: 1
-      - path: door1/transform3
-        weight: 1
-      - path: doorknob
-        weight: 1
-      - path: doorknob/transform1
-        weight: 1
-      - path: polySurface2
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

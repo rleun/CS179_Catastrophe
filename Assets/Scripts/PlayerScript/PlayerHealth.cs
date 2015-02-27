@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour {
 	PlayerController playerMovement;
 	bool isDead;
 	bool playerDamaged;
+	Rigidbody rigidbody;
 	
 
 	public int Lives;
@@ -37,8 +38,15 @@ public class PlayerHealth : MonoBehaviour {
 		anim = GetComponent <Animator> ();
 		currentHealth = startingHealth;
 		LifeLabel.text = "Life Left: " + startingHealth;
+		rigidbody = GetComponent<Rigidbody> ();
 	}
-	
+
+	void OnParticleCollision(GameObject other)
+	{
+		if(other)
+			Debug.Log ("hello");
+	}
+
 	// Update is called once per frame
 	void Update () {
 		
@@ -62,6 +70,9 @@ public class PlayerHealth : MonoBehaviour {
 			damageFlash.color = Color.Lerp (damageFlash.color, Color.clear, flashSpeed * Time.deltaTime);
 		}
 		playerDamaged = false;
+
+
+
 	}
 	
 	

@@ -12,7 +12,6 @@ public class EnemyAI : MonoBehaviour {
 	//Enemy Health
 	public GameObject EnemyHealthObject;
 	public Text DisplayName;
-	public int startingHealth = 9;
 	public string EnemyName;
 	public int currentHealth;
 	public Slider healthSlider; 
@@ -25,9 +24,9 @@ public class EnemyAI : MonoBehaviour {
 		nav = GetComponent <NavMeshAgent> ();
 
 		// Set the initial health of the player.
-		currentHealth = startingHealth;
 		//Set Enemy's name
 		DisplayName.text = EnemyName;
+		healthSlider.value = currentHealth;
 	}
 	
 	// Update is called once per frame
@@ -60,7 +59,7 @@ public class EnemyAI : MonoBehaviour {
 			{
 				nav.enabled = false;
 			}
-				
+
 		}
 		else
 		{

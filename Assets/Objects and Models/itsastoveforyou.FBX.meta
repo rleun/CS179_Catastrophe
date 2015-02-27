@@ -150,6 +150,35 @@ ModelImporter:
     4300052: Tube002
     4300054: Tube003
     4300056: Tube004
+    6400000: Box001
+    6400002: Box003
+    6400004: Box004
+    6400006: Box005
+    6400008: Box008
+    6400010: Box010
+    6400012: Box011
+    6400014: Box012
+    6400016: Box013
+    6400018: Box014
+    6400020: Box015
+    6400022: Cylinder001
+    6400024: Cylinder002
+    6400026: Cylinder003
+    6400028: Cylinder004
+    6400030: Cylinder005
+    6400032: Cylinder006
+    6400034: L-Ext001
+    6400036: L-Ext002
+    6400038: L-Ext003
+    6400040: L-Ext004
+    6400042: L-Ext005
+    6400044: L-Ext006
+    6400046: L-Ext007
+    6400048: L-Ext008
+    6400050: Tube001
+    6400052: Tube002
+    6400054: Tube003
+    6400056: Tube004
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -172,7 +201,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

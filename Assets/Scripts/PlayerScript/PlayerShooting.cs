@@ -137,7 +137,7 @@ public class PlayerShooting : MonoBehaviour {
 
 
 					if(hit.transform.tag == "Enemy")
-						//Destroy (hit.transform.gameObject);
+	//					Destroy (hit.transform.gameObject);
 					{
 						vacHealth.TakeDamage(1);
 					}

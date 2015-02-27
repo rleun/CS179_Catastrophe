@@ -90,6 +90,23 @@ ModelImporter:
     4300028: Planche
     4300030: Base-
     4300032: Base
+    6400000: Base
+    6400002: Base-
+    6400004: Blanc-
+    6400006: Blanc_
+    6400008: Planche
+    6400010: Sph__re
+    6400012: Sph__re.1
+    6400014: Sph__re.2
+    6400016: Sph__re.3
+    6400018: Sph__re.4
+    6400020: Sph__re.5
+    6400022: Tiroir 1-
+    6400024: Tiroir 1-.1
+    6400026: Tiroir-2
+    6400028: Tiroir-2.1
+    6400030: Tiroir-3
+    6400032: Tiroir-3.1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -112,7 +129,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

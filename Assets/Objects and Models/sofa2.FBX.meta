@@ -70,6 +70,19 @@ ModelImporter:
     4300020: Object14
     4300022: Object15
     4300024: Object16
+    6400000: Leg
+    6400002: Object03
+    6400004: Object06
+    6400006: Object07
+    6400008: Object08
+    6400010: Object09
+    6400012: Object1
+    6400014: Object13
+    6400016: Object14
+    6400018: Object15
+    6400020: Object16
+    6400022: Plane04
+    6400024: Plane05
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -92,7 +105,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: .00999999978
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

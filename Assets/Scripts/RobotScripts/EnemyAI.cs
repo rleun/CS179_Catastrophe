@@ -4,23 +4,30 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour {
 
-	Transform CatPosition;	//	get player cat position
+	GameObject Player;
+	Transform PlayerPosition;	//	get player cat position
+	PlayerHealth playerHealth;
 	NavMeshAgent nav;           //	nav mesh agent.
-	public float MaxDistance = 20;
 	float CurrentDistance;
 	
-	//Enemy Health
+	//Enemy Health UI
 	public GameObject EnemyHealthObject;
 	public Text DisplayName;
 	public string EnemyName;
 	public int currentHealth;
-	public Slider healthSlider; 
-	bool isDead;
-	bool damaged;
+	public Slider healthSlider;
+	public float MaxDistance = 20;
+	bool isDead = false;
+	bool damaged = false;
+	float nextAttackTime = 0;
 
 	// Use this for initialization
 	void Awake () {
-		CatPosition = GameObject.FindGameObjectWithTag ("Player").transform;
+
+		Player = GameObject.FindGameObjectWithTag ("Player");
+		playerHealth = Player.GetComponent<PlayerHealth> ();
+		PlayerPosition = Player.transform;
+		
 		nav = GetComponent <NavMeshAgent> ();
 
 		// Set the initial health of the player.
@@ -32,14 +39,23 @@ public class EnemyAI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//detects and goes toward player cat
-		MoveToPlayer ();
+		//player alive or not alive
+		isDead = playerHealth.currentHealth > 0 ? false : true;
+
+		//Enemy move to and attack player
+		if(!isDead)
+		{
+			//detects and goes toward player cat
+			MoveToPlayer ();
+			//attack player
+			Attack();
+		}
 	}
 
 
 	void MoveToPlayer()
 	{
-		CurrentDistance = Vector3.Distance (CatPosition.position, transform.position);
+		CurrentDistance = Vector3.Distance (PlayerPosition.position, transform.position);
 		bool PlayerWithInRange = CurrentDistance <= MaxDistance;
 
 		//within  enemy's range
@@ -53,7 +69,7 @@ public class EnemyAI : MonoBehaviour {
 			if(CurrentDistance > 3)
 			{
 				nav.enabled = true;
-				nav.SetDestination(CatPosition.position);
+				nav.SetDestination(PlayerPosition.position);
 			}
 			else
 			{
@@ -67,6 +83,19 @@ public class EnemyAI : MonoBehaviour {
 			EnemyHealthObject.SetActive(false);
 
 			nav.enabled = false;
+		}
+	}
+
+	void Attack()
+	{
+		nextAttackTime = nextAttackTime + Time.deltaTime;
+		int AttackDamage = 1;
+
+		if(nextAttackTime > 2 && CurrentDistance < 3)
+		{
+			//Do damage
+			playerHealth.TakeDamage(AttackDamage);
+			nextAttackTime = 0;
 		}
 	}
 }

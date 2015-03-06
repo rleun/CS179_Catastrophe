@@ -111,8 +111,8 @@ public class VacuumAttack : MonoBehaviour
 
 		if(anim.GetCurrentAnimatorStateInfo(0).IsName ("aggroed"))
 		{
-			finalTimer = 3f;
-			spinTimer = 3.18f;
+			finalTimer = 1.5f;
+			spinTimer = 1.5f;
 			isHit = false;
 		}
 

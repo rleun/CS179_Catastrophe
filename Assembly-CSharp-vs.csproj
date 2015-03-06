@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\PlayerScript\PlayerShooting.cs" />
      <Compile Include="Assets\Scripts\PlayerScript\PlayerSwipe.cs" />
      <Compile Include="Assets\Scripts\RobotScripts\EnemyAI.cs" />
+     <Compile Include="Assets\Scripts\RobotScripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\ToasterScript.cs" />
      <Compile Include="Assets\Scripts\VacuumScript\BoxMovement.cs" />
      <Compile Include="Assets\Scripts\VacuumScript\LightFollow.cs" />
@@ -76,7 +77,7 @@
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\random.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/JP/Desktop/CS179_Catastrophe/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Richel/Documents/GitHub/CS179_Catastrophe/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

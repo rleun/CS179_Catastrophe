@@ -10,9 +10,10 @@ public class VacuumMovement : MonoBehaviour
 	ParticleSystem pSystem;
 	ParticleSystem finalPSystem;
 	ParticleSystem spinPSystem;
+	ParticleSystem meteorPSystem;
 	Animator anim;
 	Animation animation;
-	float dist = 20;
+	float dist = 30;
 	bool aggro_once = false;
 	GameObject vacuum;
 	public Animator animController;
@@ -20,6 +21,7 @@ public class VacuumMovement : MonoBehaviour
 	Rigidbody rigidbody;
 	float attackTimer = 3f; 
 	int number;
+	int meteorAttack = 3;
 
 	void Awake ()
 	{
@@ -35,6 +37,7 @@ public class VacuumMovement : MonoBehaviour
 		pSystem = cyclone.GetComponent<ParticleSystem> ();
 		finalPSystem = GameObject.Find ("Big Bang").GetComponent<ParticleSystem> ();
 		spinPSystem = GameObject.Find ("Lightning Spark").GetComponent<ParticleSystem> ();
+		meteorPSystem = GameObject.Find ("Meteor Storm").GetComponent<ParticleSystem> ();
 		rigidbody = GetComponent<Rigidbody>();
 		animation = GetComponent<Animation> ();
 
@@ -63,7 +66,7 @@ public class VacuumMovement : MonoBehaviour
 				if(attackTimer <= 0)
 				{
 					number = Random.Range(0,3);
-					Debug.Log("number = " + number);
+					//Debug.Log("number = " + number);
 					anim.SetInteger("attack",number);
 					//anim.SetInteger("attack", -1);
 
@@ -71,12 +74,14 @@ public class VacuumMovement : MonoBehaviour
 				else
 				{
 					attackTimer -= Time.deltaTime;
+					finalPSystem.Stop();
+					spinPSystem.Stop();
 				}
 			}
 			else
 			{
 				vac_nav.Stop ();
-
+				attackTimer = 3f;
 				anim.SetBool("Unaggro", true);
 			}
 
@@ -92,6 +97,10 @@ public class VacuumMovement : MonoBehaviour
 			if(!finalPSystem.isPlaying)
 			{
 				finalPSystem.Play();
+			}
+			if(!meteorPSystem.isPlaying)
+			{
+				meteorPSystem.Play();
 			}
 		}
 		else if(anim.GetCurrentAnimatorStateInfo(0).IsName ("roomba_spin"))

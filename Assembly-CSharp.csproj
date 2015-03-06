@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\PlayerScript\PlayerShooting.cs" />
      <Compile Include="Assets\Scripts\PlayerScript\PlayerSwipe.cs" />
      <Compile Include="Assets\Scripts\RobotScripts\EnemyAI.cs" />
+     <Compile Include="Assets\Scripts\RobotScripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\ToasterScript.cs" />
      <Compile Include="Assets\Scripts\VacuumScript\BoxMovement.cs" />
      <Compile Include="Assets\Scripts\VacuumScript\LightFollow.cs" />

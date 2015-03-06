@@ -16,7 +16,7 @@ public class CanvasScript : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator> ();
 		player = GameObject.FindGameObjectWithTag ("Player");
-		vacuum = GameObject.FindGameObjectWithTag ("Enemy");
+		vacuum = GameObject.Find ("VacuumRoombaPos");
 		playerHealth = player.GetComponent<PlayerHealth> ();
 		vacuumHealth = vacuum.GetComponent<VacuumHealth> ();
 	}

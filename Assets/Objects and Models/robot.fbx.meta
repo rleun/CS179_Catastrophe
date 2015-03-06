@@ -241,7 +241,9 @@ ModelImporter:
     6400048: polySurface7
     6400050: polySurface8
     6400052: polySurface9
-    7400000: Take 001
+    7400000: Jump
+    7400002: Take 001
+    7400004: Death
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -258,7 +260,475 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 80
+      lastFrame: 145
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head1
+        weight: 1
+      - path: Head1/transform24
+        weight: 1
+      - path: Left_arm1
+        weight: 1
+      - path: Left_arm1/legs
+        weight: 1
+      - path: Left_arm1/legs/Left_leg
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder13
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder13/transform29
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder14
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder14/transform28
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere12 1
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere12 1/transform30
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere13
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere13/transform27
+        weight: 1
+      - path: left_eye1
+        weight: 1
+      - path: left_eye1/transform22
+        weight: 1
+      - path: Neck1
+        weight: 1
+      - path: Neck1/transform25
+        weight: 1
+      - path: pCube5
+        weight: 1
+      - path: pCube5/transform26
+        weight: 1
+      - path: pCube6
+        weight: 1
+      - path: pCube6/transform18
+        weight: 1
+      - path: pCylinder15
+        weight: 1
+      - path: pCylinder15/transform19
+        weight: 1
+      - path: pPipe3
+        weight: 1
+      - path: pPipe3/transform21
+        weight: 1
+      - path: pPipe4
+        weight: 1
+      - path: pPipe4/transform20
+        weight: 1
+      - path: pSphere12
+        weight: 1
+      - path: pSphere12/polySurface5
+        weight: 1
+      - path: pSphere12/polySurface6
+        weight: 1
+      - path: pSphere12/polySurface7
+        weight: 1
+      - path: pSphere12/polySurface8
+        weight: 1
+      - path: pSphere12/polySurface9
+        weight: 1
+      - path: pSphere12/polySurface10
+        weight: 1
+      - path: pSphere12/polySurface11
+        weight: 1
+      - path: pSphere12/polySurface14
+        weight: 1
+      - path: pSphere12/polySurface15
+        weight: 1
+      - path: pSphere12/polySurface16
+        weight: 1
+      - path: pSphere12/polySurface17
+        weight: 1
+      - path: pSphere12/polySurface18
+        weight: 1
+      - path: pSphere12/polySurface19
+        weight: 1
+      - path: pSphere12/polySurface20
+        weight: 1
+      - path: pSphere12/polySurface21
+        weight: 1
+      - path: pSphere12/polySurface22
+        weight: 1
+      - path: pSphere12/polySurface23
+        weight: 1
+      - path: pSphere12/polySurface24
+        weight: 1
+      - path: pSphere12/polySurface25
+        weight: 1
+      - path: pSphere12/polySurface26
+        weight: 1
+      - path: pSphere12/polySurface27
+        weight: 1
+      - path: pSphere12/polySurface28
+        weight: 1
+      - path: pSphere12/polySurface29
+        weight: 1
+      - path: pSphere12/polySurface30
+        weight: 1
+      - path: pSphere12/polySurface31
+        weight: 1
+      - path: pSphere12/polySurface32
+        weight: 1
+      - path: pSphere12/polySurface33
+        weight: 1
+      - path: pSphere12/transform31
+        weight: 1
+      - path: pSphere14
+        weight: 1
+      - path: pSphere14/transform17
+        weight: 1
+      - path: pSphere15
+        weight: 1
+      - path: pSphere15/transform16
+        weight: 1
+      - path: pSphere16
+        weight: 1
+      - path: pSphere16/transform15
+        weight: 1
+      - path: right_eye1
+        weight: 1
+      - path: right_eye1/transform23
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 146
+      lastFrame: 221
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head1
+        weight: 1
+      - path: Head1/transform24
+        weight: 1
+      - path: Left_arm1
+        weight: 1
+      - path: Left_arm1/legs
+        weight: 1
+      - path: Left_arm1/legs/Left_leg
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder13
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder13/transform29
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder14
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder14/transform28
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere12 1
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere12 1/transform30
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere13
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere13/transform27
+        weight: 1
+      - path: left_eye1
+        weight: 1
+      - path: left_eye1/transform22
+        weight: 1
+      - path: Neck1
+        weight: 1
+      - path: Neck1/transform25
+        weight: 1
+      - path: pCube5
+        weight: 1
+      - path: pCube5/transform26
+        weight: 1
+      - path: pCube6
+        weight: 1
+      - path: pCube6/transform18
+        weight: 1
+      - path: pCylinder15
+        weight: 1
+      - path: pCylinder15/transform19
+        weight: 1
+      - path: pPipe3
+        weight: 1
+      - path: pPipe3/transform21
+        weight: 1
+      - path: pPipe4
+        weight: 1
+      - path: pPipe4/transform20
+        weight: 1
+      - path: pSphere12
+        weight: 1
+      - path: pSphere12/polySurface5
+        weight: 1
+      - path: pSphere12/polySurface6
+        weight: 1
+      - path: pSphere12/polySurface7
+        weight: 1
+      - path: pSphere12/polySurface8
+        weight: 1
+      - path: pSphere12/polySurface9
+        weight: 1
+      - path: pSphere12/polySurface10
+        weight: 1
+      - path: pSphere12/polySurface11
+        weight: 1
+      - path: pSphere12/polySurface14
+        weight: 1
+      - path: pSphere12/polySurface15
+        weight: 1
+      - path: pSphere12/polySurface16
+        weight: 1
+      - path: pSphere12/polySurface17
+        weight: 1
+      - path: pSphere12/polySurface18
+        weight: 1
+      - path: pSphere12/polySurface19
+        weight: 1
+      - path: pSphere12/polySurface20
+        weight: 1
+      - path: pSphere12/polySurface21
+        weight: 1
+      - path: pSphere12/polySurface22
+        weight: 1
+      - path: pSphere12/polySurface23
+        weight: 1
+      - path: pSphere12/polySurface24
+        weight: 1
+      - path: pSphere12/polySurface25
+        weight: 1
+      - path: pSphere12/polySurface26
+        weight: 1
+      - path: pSphere12/polySurface27
+        weight: 1
+      - path: pSphere12/polySurface28
+        weight: 1
+      - path: pSphere12/polySurface29
+        weight: 1
+      - path: pSphere12/polySurface30
+        weight: 1
+      - path: pSphere12/polySurface31
+        weight: 1
+      - path: pSphere12/polySurface32
+        weight: 1
+      - path: pSphere12/polySurface33
+        weight: 1
+      - path: pSphere12/transform31
+        weight: 1
+      - path: pSphere14
+        weight: 1
+      - path: pSphere14/transform17
+        weight: 1
+      - path: pSphere15
+        weight: 1
+      - path: pSphere15/transform16
+        weight: 1
+      - path: pSphere16
+        weight: 1
+      - path: pSphere16/transform15
+        weight: 1
+      - path: right_eye1
+        weight: 1
+      - path: right_eye1/transform23
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 221
+      lastFrame: 260
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Head1
+        weight: 1
+      - path: Head1/transform24
+        weight: 1
+      - path: Left_arm1
+        weight: 1
+      - path: Left_arm1/legs
+        weight: 1
+      - path: Left_arm1/legs/Left_leg
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder13
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder13/transform29
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder14
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pCylinder14/transform28
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere12 1
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere12 1/transform30
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere13
+        weight: 1
+      - path: Left_arm1/legs/Left_leg/pSphere13/transform27
+        weight: 1
+      - path: left_eye1
+        weight: 1
+      - path: left_eye1/transform22
+        weight: 1
+      - path: Neck1
+        weight: 1
+      - path: Neck1/transform25
+        weight: 1
+      - path: pCube5
+        weight: 1
+      - path: pCube5/transform26
+        weight: 1
+      - path: pCube6
+        weight: 1
+      - path: pCube6/transform18
+        weight: 1
+      - path: pCylinder15
+        weight: 1
+      - path: pCylinder15/transform19
+        weight: 1
+      - path: pPipe3
+        weight: 1
+      - path: pPipe3/transform21
+        weight: 1
+      - path: pPipe4
+        weight: 1
+      - path: pPipe4/transform20
+        weight: 1
+      - path: pSphere12
+        weight: 1
+      - path: pSphere12/polySurface5
+        weight: 1
+      - path: pSphere12/polySurface6
+        weight: 1
+      - path: pSphere12/polySurface7
+        weight: 1
+      - path: pSphere12/polySurface8
+        weight: 1
+      - path: pSphere12/polySurface9
+        weight: 1
+      - path: pSphere12/polySurface10
+        weight: 1
+      - path: pSphere12/polySurface11
+        weight: 1
+      - path: pSphere12/polySurface14
+        weight: 1
+      - path: pSphere12/polySurface15
+        weight: 1
+      - path: pSphere12/polySurface16
+        weight: 1
+      - path: pSphere12/polySurface17
+        weight: 1
+      - path: pSphere12/polySurface18
+        weight: 1
+      - path: pSphere12/polySurface19
+        weight: 1
+      - path: pSphere12/polySurface20
+        weight: 1
+      - path: pSphere12/polySurface21
+        weight: 1
+      - path: pSphere12/polySurface22
+        weight: 1
+      - path: pSphere12/polySurface23
+        weight: 1
+      - path: pSphere12/polySurface24
+        weight: 1
+      - path: pSphere12/polySurface25
+        weight: 1
+      - path: pSphere12/polySurface26
+        weight: 1
+      - path: pSphere12/polySurface27
+        weight: 1
+      - path: pSphere12/polySurface28
+        weight: 1
+      - path: pSphere12/polySurface29
+        weight: 1
+      - path: pSphere12/polySurface30
+        weight: 1
+      - path: pSphere12/polySurface31
+        weight: 1
+      - path: pSphere12/polySurface32
+        weight: 1
+      - path: pSphere12/polySurface33
+        weight: 1
+      - path: pSphere12/transform31
+        weight: 1
+      - path: pSphere14
+        weight: 1
+      - path: pSphere14/transform17
+        weight: 1
+      - path: pSphere15
+        weight: 1
+      - path: pSphere15/transform16
+        weight: 1
+      - path: pSphere16
+        weight: 1
+      - path: pSphere16/transform15
+        weight: 1
+      - path: right_eye1
+        weight: 1
+      - path: right_eye1/transform23
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

@@ -87,7 +87,10 @@ ModelImporter:
     6400018: pSphere2
     6400020: pSphere3
     6400022: pSphere4
-    7400000: Take 001
+    7400000: Idle
+    7400002: Take-Off
+    7400004: Spinning Blades Midair
+    7400006: Death
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -104,7 +107,255 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 1.10000002
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Back_wheel1
+        weight: 1
+      - path: Back_wheel1/pCube5
+        weight: 1
+      - path: Back_wheel1/pSphere2
+        weight: 1
+      - path: Back_wheel2
+        weight: 1
+      - path: Back_wheel2/pCube7
+        weight: 1
+      - path: Back_wheel2/pSphere4
+        weight: 1
+      - path: Front_wheel1
+        weight: 1
+      - path: Front_wheel1/pCube4
+        weight: 1
+      - path: Front_wheel1/pSphere1
+        weight: 1
+      - path: Front_wheel2
+        weight: 1
+      - path: Front_wheel2/pCube6
+        weight: 1
+      - path: Front_wheel2/pSphere3
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: pCylinder1
+        weight: 1
+      - path: Spinning_Wings
+        weight: 1
+      - path: Spinning_Wings/pCube2
+        weight: 1
+      - path: Spinning_Wings/pCube3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Take-Off
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Back_wheel1
+        weight: 1
+      - path: Back_wheel1/pCube5
+        weight: 1
+      - path: Back_wheel1/pSphere2
+        weight: 1
+      - path: Back_wheel2
+        weight: 1
+      - path: Back_wheel2/pCube7
+        weight: 1
+      - path: Back_wheel2/pSphere4
+        weight: 1
+      - path: Front_wheel1
+        weight: 1
+      - path: Front_wheel1/pCube4
+        weight: 1
+      - path: Front_wheel1/pSphere1
+        weight: 1
+      - path: Front_wheel2
+        weight: 1
+      - path: Front_wheel2/pCube6
+        weight: 1
+      - path: Front_wheel2/pSphere3
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: pCylinder1
+        weight: 1
+      - path: Spinning_Wings
+        weight: 1
+      - path: Spinning_Wings/pCube2
+        weight: 1
+      - path: Spinning_Wings/pCube3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Spinning Blades Midair
+      takeName: Take 001
+      firstFrame: 202
+      lastFrame: 236
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Back_wheel1
+        weight: 1
+      - path: Back_wheel1/pCube5
+        weight: 1
+      - path: Back_wheel1/pSphere2
+        weight: 1
+      - path: Back_wheel2
+        weight: 1
+      - path: Back_wheel2/pCube7
+        weight: 1
+      - path: Back_wheel2/pSphere4
+        weight: 1
+      - path: Front_wheel1
+        weight: 1
+      - path: Front_wheel1/pCube4
+        weight: 1
+      - path: Front_wheel1/pSphere1
+        weight: 1
+      - path: Front_wheel2
+        weight: 1
+      - path: Front_wheel2/pCube6
+        weight: 1
+      - path: Front_wheel2/pSphere3
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: pCylinder1
+        weight: 1
+      - path: Spinning_Wings
+        weight: 1
+      - path: Spinning_Wings/pCube2
+        weight: 1
+      - path: Spinning_Wings/pCube3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 291
+      lastFrame: 353
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Back_wheel1
+        weight: 1
+      - path: Back_wheel1/pCube5
+        weight: 1
+      - path: Back_wheel1/pSphere2
+        weight: 1
+      - path: Back_wheel2
+        weight: 1
+      - path: Back_wheel2/pCube7
+        weight: 1
+      - path: Back_wheel2/pSphere4
+        weight: 1
+      - path: Front_wheel1
+        weight: 1
+      - path: Front_wheel1/pCube4
+        weight: 1
+      - path: Front_wheel1/pSphere1
+        weight: 1
+      - path: Front_wheel2
+        weight: 1
+      - path: Front_wheel2/pCube6
+        weight: 1
+      - path: Front_wheel2/pSphere3
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: pCylinder1
+        weight: 1
+      - path: Spinning_Wings
+        weight: 1
+      - path: Spinning_Wings/pCube2
+        weight: 1
+      - path: Spinning_Wings/pCube3
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

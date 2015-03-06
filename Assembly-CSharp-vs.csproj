@@ -49,6 +49,7 @@
      <Compile Include="Assets\AnimatorSetup.cs" />
      <Compile Include="Assets\Elementals\Scripts\OrbitCamera.cs" />
      <Compile Include="Assets\Elementals\Scripts\TestParticles.cs" />
+     <Compile Include="Assets\LaserBoltMove.cs" />
      <Compile Include="Assets\Scripts\BaseCharacterClass.cs" />
      <Compile Include="Assets\Scripts\BoxScript.cs" />
      <Compile Include="Assets\Scripts\CanvasScript.cs" />
@@ -63,6 +64,7 @@
      <Compile Include="Assets\Scripts\PlayerScript\PlayerSwipe.cs" />
      <Compile Include="Assets\Scripts\RobotScripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\RobotScripts\EnemyHealth.cs" />
+     <Compile Include="Assets\Scripts\TimerScript.cs" />
      <Compile Include="Assets\Scripts\ToasterScript.cs" />
      <Compile Include="Assets\Scripts\VacuumScript\BoxMovement.cs" />
      <Compile Include="Assets\Scripts\VacuumScript\LightFollow.cs" />

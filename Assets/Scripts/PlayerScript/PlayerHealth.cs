@@ -24,7 +24,8 @@ public class PlayerHealth : MonoBehaviour {
 	bool isDead;
 	bool playerDamaged;
 	Rigidbody rigidbody;
-	
+
+	int x = 1;
 
 	public int Lives;
 	public Text LifeLabel;
@@ -44,7 +45,12 @@ public class PlayerHealth : MonoBehaviour {
 	void OnParticleCollision(GameObject other)
 	{
 		if(other)
-			Debug.Log ("hello");
+		{
+
+			TakeDamage(1);
+			Debug.Log (other.name);
+		}
+
 	}
 
 	// Update is called once per frame

@@ -10,6 +10,7 @@ public class PlayerAttack : MonoBehaviour {
 	GameObject player;
 	PlayerHealth playerHealth;
 	VacuumHealth vacHealth;
+	EnemyHealth enemyHealthScript;
 	bool hitEnemy;
 	float timer;
 
@@ -30,10 +31,13 @@ public class PlayerAttack : MonoBehaviour {
 	void OnTriggerStay(Collider other)
 	{
 		//If Paw collides & during paw_swipe animation
-
-		if((other.gameObject == enemy) && (anim.GetCurrentAnimatorStateInfo(0).IsName("paw_swipe")))
+		//Debug.Log (other.gameObject);
+		if((other.gameObject.tag == "Enemy") && (anim.GetCurrentAnimatorStateInfo(0).IsName("paw_swipe")))
 		{
+			Debug.Log(other.gameObject);
+
 			hitEnemy = true;
+			enemy = other.gameObject;
 		}
 		else if(!(anim.GetCurrentAnimatorStateInfo(0).IsName("paw_swipe")))
 		{
@@ -44,7 +48,7 @@ public class PlayerAttack : MonoBehaviour {
 	
 	void OnTriggerExit(Collider other)
 	{
-		if((other.gameObject == enemy) || !(anim.GetCurrentAnimatorStateInfo(0).IsName("paw_swipe")))
+		if((other.gameObject.tag == "Enemy") || !(anim.GetCurrentAnimatorStateInfo(0).IsName("paw_swipe")))
 		{
 			hitEnemy = false;
 		}
@@ -57,7 +61,11 @@ public class PlayerAttack : MonoBehaviour {
 		
 		if((timer >= timeBetweenAttacks) && hitEnemy && (playerHealth.currentHealth > 0))
 		{
-			Attack ();
+			//Attack ();
+			Debug.Log ("enemy hit: " + enemy.gameObject);
+			enemyHealthScript = enemy.GetComponent<EnemyHealth>();
+			enemyHealthScript.TakeDamage(1);
+			timer = 0f;
 		}
 		
 	}
@@ -66,9 +74,13 @@ public class PlayerAttack : MonoBehaviour {
 	void Attack ()
 	{
 		timer = 0f;
-		if (vacHealth.currentHealth > 0) 
+		if(enemy = GameObject.Find ("VacuumRoombaPos"))
 		{
-				vacHealth.TakeDamage (attackDamage);		
-		} 
+			if (vacHealth.currentHealth > 0) 
+			{
+					vacHealth.TakeDamage (attackDamage);		
+			} 
+		}
+
 	}
 }

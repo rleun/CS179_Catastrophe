@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\playerCrossHair.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RobotScripts\EnemyAI.cs">
     <Files>
-      <File FileName="Assets\Scripts\VacuumScript\VacuumMovement.cs" Line="107" Column="1" />
-      <File FileName="Assets\Scripts\PlayerScript\PlayerHealth.cs" Line="107" Column="3" />
-      <File FileName="Assets\Scripts\playerCrossHair.cs" Line="33" Column="4" />
+      <File FileName="Assets\Scripts\RobotScripts\EnemyAI.cs" Line="23" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

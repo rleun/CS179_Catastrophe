@@ -34,7 +34,7 @@ public class PlayerAttack : MonoBehaviour {
 		//Debug.Log (other.gameObject);
 		if((other.gameObject.tag == "Enemy") && (anim.GetCurrentAnimatorStateInfo(0).IsName("paw_swipe")))
 		{
-			Debug.Log(other.gameObject);
+			//Debug.Log(other.gameObject);
 
 			hitEnemy = true;
 			enemy = other.gameObject;

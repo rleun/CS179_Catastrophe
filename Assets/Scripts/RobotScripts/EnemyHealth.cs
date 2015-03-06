@@ -15,6 +15,8 @@ public class EnemyHealth : MonoBehaviour {
 	private float startTime;
 	private float elapsedTime;
 	GameObject cat_paw_main;
+
+	EnemyAI enemyAIScript;
 	
 	
 	
@@ -26,6 +28,7 @@ public class EnemyHealth : MonoBehaviour {
 		pSystem = GetComponent <ParticleSystem> ();
 		cat_paw_main = GameObject.Find ("Main Camera");
 		startTime = Time.time;
+		enemyAIScript = GetComponent <EnemyAI> ();
 		
 	}
 	
@@ -57,14 +60,15 @@ public class EnemyHealth : MonoBehaviour {
 		if(currentPaw.is_main)
 		{
 			//Get Particle System for onHit
-			GameObject vacuumParticle = GameObject.Find ("RobotHitParticle");
-			pSystem = vacuumParticle.GetComponent<ParticleSystem> ();
+			//GameObject vacuumParticle = GameObject.Find ("RobotHitParticle");
+			pSystem = GetComponent<ParticleSystem> ();
 			pSystem.Play ();
 		}
 		
 		
 		
 		currentHealth -= amount;
+		enemyAIScript.currentHealth = enemyAIScript.currentHealth - 1;
 		Debug.Log ("Robot takes " + amount + " damage. HP left: " + currentHealth);
 		
 		if(currentHealth <= 0)

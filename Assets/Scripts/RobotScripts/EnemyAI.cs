@@ -38,7 +38,7 @@ public class EnemyAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		healthSlider.value = currentHealth;
 		//player alive or not alive
 		isDead = playerHealth.currentHealth > 0 ? false : true;
 

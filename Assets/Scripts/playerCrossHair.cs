@@ -29,12 +29,12 @@ public class playerCrossHair : MonoBehaviour {
 			//Transform dummy;
 			if(cam_target.transform.tag == "Interactable")
 			{
-				Debug.Log ("interact");
+//				Debug.Log ("interact");
 				anim.SetBool("catCross",true);
 			}
 			else if(cam_target.transform.tag == "Untagged")
 			{
-				Debug.Log ("untagged");
+//				Debug.Log ("untagged");
 				anim.SetBool("catCross",false);
 			}
 			else

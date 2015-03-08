@@ -57,6 +57,7 @@ public class VacuumMovement : MonoBehaviour
 			}
 			anim.SetBool("Unaggro", false);
 			attackTimer = 3f;
+
 		}
 		else if(anim.GetCurrentAnimatorStateInfo(0).IsName ("aggroed"))
 		{
@@ -111,5 +112,15 @@ public class VacuumMovement : MonoBehaviour
 
 			}
 		}
+
+		if(withinRange)
+		{
+			enemyHealth.EnemyHealthObject.SetActive(true);
+		}
+		else
+		{
+			enemyHealth.EnemyHealthObject.SetActive(false);
+		}
+
 	}
 }

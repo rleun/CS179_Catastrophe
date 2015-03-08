@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class VacuumHealth : MonoBehaviour
 {
@@ -20,6 +21,12 @@ public class VacuumHealth : MonoBehaviour
 	GameObject cat_paw_main;
 
 
+	//Boss Health UI
+	public GameObject EnemyHealthObject;
+	public Text DisplayName;
+	public string EnemyName;
+	public Slider healthSlider;
+
 
     void Awake ()
     {
@@ -32,15 +39,17 @@ public class VacuumHealth : MonoBehaviour
 		vacAudio.clip = aliveClip;
 		startTime = Time.time;
 
+		//Set boss health UI
+		DisplayName.text = EnemyName;
+		healthSlider.value = currentHealth;
+
     }
 
-	void Start()
-	{
-
-	}
 
     void Update ()
     {
+		healthSlider.value = currentHealth;
+
 		elapsedTime = Time.time;
 		vacAudio.volume = 1f;
 		if (!isDead && (elapsedTime - startTime > 44f) | firstAudio ) 
@@ -102,15 +111,5 @@ public class VacuumHealth : MonoBehaviour
 //		victoryText.SetActive(true);
     }
 
-	void OnGUI() {
-		//Boss world position
-		//Vector2 targetPos;
-		//targetPos = Camera.main.WorldToScreenPoint (transform.position);
-		
-		GUI.backgroundColor = Color.green;
-		GUI.Label(new Rect (50, 5, 150, 25), "<color=white>Vacuum Health</color>");
-		float bar = GUI.HorizontalScrollbar(new Rect(50, 30, 150, 25), 0, currentHealth,0, startingHealth);
-		
-	}
 
 }

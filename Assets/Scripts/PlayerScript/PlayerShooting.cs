@@ -10,14 +10,6 @@ public class PlayerShooting : MonoBehaviour {
 	GameObject enemy;
 	VacuumHealth vacHealth;
 
-	//Robot
-	GameObject EnemyRobot;
-	EnemyHealth RobotHealth;
-
-	//Helicopter
-	GameObject EnemyHelicopter;
-	EnemyHealth HelicopterHealth;
-
 	float timer = .5f;
 	
 	GameObject[] impacts;
@@ -52,16 +44,6 @@ public class PlayerShooting : MonoBehaviour {
 		enemy = GameObject.FindGameObjectWithTag ("Enemy");
 		//Change later to encompase all enemies
 		vacHealth = enemy.GetComponent <VacuumHealth> ();
-
-		//Set this for robot
-		EnemyRobot = GameObject.FindGameObjectWithTag ("Robot");
-		RobotHealth = EnemyRobot.GetComponent<EnemyHealth> ();
-
-		//Set this for Helicopter
-		EnemyHelicopter = GameObject.FindGameObjectWithTag ("Helicopter");
-		HelicopterHealth = EnemyHelicopter.GetComponent<EnemyHealth> ();
-
-
 		ammo = ammoAmount;
 		changeToMain = false;
 
@@ -151,29 +133,15 @@ public class PlayerShooting : MonoBehaviour {
 					Transform clone;
 //					clone = Instantiate(shootingToast, transform.position, transform.position);
 //					clone.rigidbody.AddForce(clone.transform.forward*shootForce);
-				
 
 
-					switch(hit.transform.tag[0])
+
+					if(hit.transform.tag == "Enemy")
+	//					Destroy (hit.transform.gameObject);
 					{
-						case 'E':
-							vacHealth.TakeDamage(1);
-							Debug.Log('a');
-							break;
-						case 'R':
-							RobotHealth.TakeDamage(1);
-							Debug.Log('b');
-							break;
-						case 'H':
-							HelicopterHealth.TakeDamage(1);
-							Debug.Log('c');
-							break;
-						default:
-							break;
-					};
-
-
-
+						vacHealth.TakeDamage(1);
+					}
+					Debug.Log("hit something?");
 					impacts[currentImpact].transform.position = hit.point;
 					impacts[currentImpact].GetComponent<ParticleSystem>().Play();
 

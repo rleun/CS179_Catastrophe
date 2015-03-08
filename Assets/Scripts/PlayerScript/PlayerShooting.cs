@@ -9,6 +9,15 @@ public class PlayerShooting : MonoBehaviour {
 	public GameObject impactPrefab;
 	GameObject enemy;
 	VacuumHealth vacHealth;
+	
+	//Robot
+	GameObject EnemyRobot;
+	EnemyHealth RobotHealth;
+
+	//Helicopter
+	GameObject EnemyHelicopter;
+	EnemyHealth HelicopterHealth;
+
 
 	float timer = .5f;
 	
@@ -44,6 +53,15 @@ public class PlayerShooting : MonoBehaviour {
 		enemy = GameObject.FindGameObjectWithTag ("Enemy");
 		//Change later to encompase all enemies
 		vacHealth = enemy.GetComponent <VacuumHealth> ();
+
+		//Set this for robot
+		EnemyRobot = GameObject.FindGameObjectWithTag ("Robot");
+		RobotHealth = EnemyRobot.GetComponent<EnemyHealth> ();
+
+		//Set this for Helicopter
+		EnemyHelicopter = GameObject.FindGameObjectWithTag ("Helicopter");
+		HelicopterHealth = EnemyHelicopter.GetComponent<EnemyHealth> ();
+
 		ammo = ammoAmount;
 		changeToMain = false;
 
@@ -141,7 +159,19 @@ public class PlayerShooting : MonoBehaviour {
 					{
 						vacHealth.TakeDamage(1);
 					}
-					Debug.Log("hit something?");
+
+					if(hit.transform.tag == "Robot")
+					{
+						RobotHealth.TakeDamage(1);
+					}
+
+					if(hit.transform.tag == "Helicopter")
+					{
+						HelicopterHealth.TakeDamage(1);
+					}
+
+
+					Debug.Log("hit something: " + hit.transform.tag);
 					impacts[currentImpact].transform.position = hit.point;
 					impacts[currentImpact].GetComponent<ParticleSystem>().Play();
 

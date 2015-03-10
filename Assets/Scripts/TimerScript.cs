@@ -5,7 +5,7 @@ using System.Collections;
 public class TimerScript : MonoBehaviour {
 	GameObject Timer;
 	int seconds;
-	int minutes = 1;
+	int minutes = 5;
 	float timeLeft;
 	GameObject gameoverText;
 	GameObject player;

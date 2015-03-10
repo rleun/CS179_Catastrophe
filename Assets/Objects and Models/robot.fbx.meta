@@ -242,7 +242,7 @@ ModelImporter:
     6400050: polySurface8
     6400052: polySurface9
     7400000: Jump
-    7400002: Take 001
+    7400002: Attack
     7400004: Death
     9500000: //RootNode
   materials:
@@ -418,7 +418,7 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
-      name: Take 001
+      name: Attack
       takeName: Take 001
       firstFrame: 146
       lastFrame: 221

@@ -91,7 +91,7 @@ public class EnemyAI : MonoBehaviour {
 		nextAttackTime = nextAttackTime + Time.deltaTime;
 		int AttackDamage = 1;
 
-		if(nextAttackTime > 2 && CurrentDistance < 3)
+		if(nextAttackTime > 1 && CurrentDistance < 2.5)
 		{
 			//Do damage
 			playerHealth.TakeDamage(AttackDamage);

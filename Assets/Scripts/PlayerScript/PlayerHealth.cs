@@ -76,6 +76,8 @@ public class PlayerHealth : MonoBehaviour {
 			damageFlash.color = Color.Lerp (damageFlash.color, Color.clear, flashSpeed * Time.deltaTime);
 		}
 		playerDamaged = false;
+		LifeLabel.text = "Life Left: " + currentHealth;
+		healthSlider.value = currentHealth;
 
 
 
@@ -87,8 +89,8 @@ public class PlayerHealth : MonoBehaviour {
 		playerDamaged = true;
 		currentHealth = currentHealth - amount;
 		Debug.Log ("Cat takes " + amount + " damage. HP left: " + currentHealth);
-		LifeLabel.text = "Life Left: " + currentHealth;
-		healthSlider.value = currentHealth;
+		//LifeLabel.text = "Life Left: " + currentHealth;
+		//healthSlider.value = currentHealth;
 		if (currentHealth <= 0 && !isDead) {
 			Die();		
 			Debug.Log("Cat dead");

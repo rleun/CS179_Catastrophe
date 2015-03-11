@@ -10,6 +10,7 @@ public class PlayerAttack : MonoBehaviour {
 	GameObject player;
 	PlayerHealth playerHealth;
 	VacuumHealth vacHealth;
+
 	EnemyHealth enemyHealthScript;
 	bool hitEnemy;
 	float timer;
@@ -21,6 +22,7 @@ public class PlayerAttack : MonoBehaviour {
 		enemy = GameObject.FindGameObjectWithTag ("Enemy");
 		//Change later to encompase all enemies
 		vacHealth = enemy.GetComponent <VacuumHealth> ();
+
 	}
 
 	void Start()
@@ -80,6 +82,9 @@ public class PlayerAttack : MonoBehaviour {
 			{
 					vacHealth.TakeDamage (attackDamage);		
 			} 
+		}
+		if (enemy = GameObject.Find ("robot")) {
+
 		}
 
 	}

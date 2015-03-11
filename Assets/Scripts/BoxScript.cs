@@ -9,8 +9,9 @@ public class BoxScript : MonoBehaviour {
 	float dist = 20;
 	Animator anim;
 	float timer = 10;
+	float healTimer = 1;
 	// Use this for initialization
-	void Awake()
+	void Start()
 	{
 		player = GameObject.FindGameObjectWithTag ("Player");
 		player_loc = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -41,12 +42,14 @@ public class BoxScript : MonoBehaviour {
 	{
 		bool catInRange = Vector3.Distance(player_loc.position,transform.position) < dist;
 			anim.SetBool("catInRange",catInRange);
-		if(anim.GetCurrentAnimatorStateInfo(0).IsName("boxClosed"))
+		if(anim.GetCurrentAnimatorStateInfo(0).IsName("boxClosed") && anim.GetBool("catInBox") == true)
 		{
 			timer -= Time.deltaTime;
+			healTimer -= Time.deltaTime;
 			//player health component used as placeholder for curiousity meter to be implemented
-			if(playerHealth.currentHealth < 9 && anim.GetBool("boxTime") == false)
+			if(playerHealth.currentHealth < 9 && anim.GetBool("boxTime") == false && healTimer <= 0)
 			{
+				healTimer = 1;
 				playerHealth.currentHealth+=1;
 			}
 			if(timer <= 0)

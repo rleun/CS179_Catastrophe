@@ -8,7 +8,8 @@ public class EnemyAI : MonoBehaviour {
 	Transform PlayerPosition;	//	get player cat position
 	PlayerHealth playerHealth;
 	NavMeshAgent nav;           //	nav mesh agent.
-	float CurrentDistance;
+	public float CurrentDistance;
+	public bool PlayerWithInRange;
 	
 	//Enemy Health UI
 	public GameObject EnemyHealthObject;
@@ -40,7 +41,7 @@ public class EnemyAI : MonoBehaviour {
 	void Update () {
 		healthSlider.value = currentHealth;
 		//player alive or not alive
-		isDead = playerHealth.currentHealth > 0 ? false : true;
+		isDead = currentHealth > 0 ? false : true;
 
 		//Enemy move to and attack player
 		if(!isDead)
@@ -50,13 +51,17 @@ public class EnemyAI : MonoBehaviour {
 			//attack player
 			Attack();
 		}
+		else
+		{
+			EnemyHealthObject.SetActive(false);
+		}
 	}
 
 
 	void MoveToPlayer()
 	{
 		CurrentDistance = Vector3.Distance (PlayerPosition.position, transform.position);
-		bool PlayerWithInRange = CurrentDistance <= MaxDistance;
+		PlayerWithInRange = CurrentDistance <= MaxDistance;
 
 		//within  enemy's range
 		if(PlayerWithInRange)

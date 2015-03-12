@@ -1,11 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RobotScripts/EnemyAI.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RobotScripts/RobotAnimatorScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/RobotScripts/EnemyAI.cs" Line="55" Column="8" />
-      <File FileName="Assets/Scripts/TimerScript.cs" Line="8" Column="17" />
-      <File FileName="Assets/Scripts/RobotScripts/EnemyHealth.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DoorScript.cs" Line="23" Column="3" />
+      <File FileName="Assets/Scripts/RobotScripts/EnemyAI.cs" Line="99" Column="49" />
+      <File FileName="Assets/Scripts/RobotScripts/RobotAnimatorScript.cs" Line="31" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

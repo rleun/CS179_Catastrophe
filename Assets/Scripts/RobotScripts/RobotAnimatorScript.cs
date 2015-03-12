@@ -19,16 +19,23 @@ public class RobotAnimatorScript : MonoBehaviour {
 	void Update () {
 		if (enemyAIScript.currentHealth > 0) 
 		{
-			if(enemyAIScript.CurrentDistance < 8)
+			if(enemyAIScript.CurrentDistance < 8 && enemyAIScript.PlayerWithInRange)
 			{
 				anim.SetBool("Attack",true);
 				anim.SetBool("Jump",false);
 			}
-			else
+			else if(enemyAIScript.CurrentDistance >= 8 && enemyAIScript.PlayerWithInRange)
 			{
 				anim.SetBool("Attack",false);
 				anim.SetBool("Jump",true);
 			}
+			else
+			{
+				anim.SetBool("Attack",false);
+				anim.SetBool("Jump",false);
+				anim.SetBool("Idle",true);
+			}
+
 		}
 		else
 		{

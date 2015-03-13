@@ -51,6 +51,10 @@ public class VacuumMovement : MonoBehaviour
 		if(anim.GetCurrentAnimatorStateInfo(0).IsName ("vacIdle") && withinRange && enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0 )
 		{
 			anim.SetTrigger("Aggro");
+			if(!meteorPSystem.isPlaying)
+			{
+				meteorPSystem.Play();
+			}
 			if(!pSystem.isPlaying)
 			{
 				pSystem.Play();

@@ -22,6 +22,8 @@ public class PlayerSwipe : MonoBehaviour {
 		{
 			anim.SetTrigger(swipeHash);
 
+
+
 		}
 
 	}

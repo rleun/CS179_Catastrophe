@@ -78,8 +78,9 @@ public class PlayerShooting : MonoBehaviour {
 	void Update () {
 
 		//if(playerpaw.is_toast)
-		if(true)
+		if(playerpaw.is_toast)
 		{
+			ToastAmmoText.enabled = true;
 			ToastAmmoText.text = "Toast ammo: " + ammo;
 		}
 		else

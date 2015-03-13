@@ -1,6 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerScript\PlayerSwipe.cs">
+    <Files>
+      <File FileName="Assets\Scripts\VacuumScript\VacuumMovement.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\PlayerScript\PlayerShooting.cs" Line="157" Column="22" />
+      <File FileName="Assets\Scripts\PlayerScript\PlayerSwipe.cs" Line="22" Column="4" />
+      <File FileName="Assets\Scripts\PlayerScript\PlayerAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerScript\PlayerPaw.cs" Line="117" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

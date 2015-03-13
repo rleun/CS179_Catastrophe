@@ -21,6 +21,7 @@ public class EnemyAI : MonoBehaviour {
 	bool isDead = false;
 	bool damaged = false;
 	float nextAttackTime = 0;
+	//public GameObject CustomExplosion;
 
 	// Use this for initialization
 	void Awake () {
@@ -35,6 +36,10 @@ public class EnemyAI : MonoBehaviour {
 		//Set Enemy's name
 		DisplayName.text = EnemyName;
 		healthSlider.value = currentHealth;
+	}
+
+	void Start() {
+		//Instantiate (CustomExplosion, transform.position, transform.rotation);
 	}
 	
 	// Update is called once per frame
@@ -102,5 +107,6 @@ public class EnemyAI : MonoBehaviour {
 			playerHealth.TakeDamage(AttackDamage);
 			nextAttackTime = 0;
 		}
+
 	}
 }

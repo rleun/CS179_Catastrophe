@@ -31,7 +31,7 @@ public class PlayerShooting : MonoBehaviour {
 	float changeTimer;
 	public float changeTimerDelay;
 	public int ammoAmount;
-	public PlayerPaw playerpaw;
+	PlayerPaw playerpaw;
 	int ammo;
 
 	public Text ToastAmmoText;
@@ -46,8 +46,10 @@ public class PlayerShooting : MonoBehaviour {
 		shootingTimer = shootingTimeDelay;
 		impacts = new GameObject[maxImpacts];
 		for(int i = 0; i < maxImpacts; i++)
+		{
 			impacts[i] = (GameObject)Instantiate(impactPrefab);
-		
+		}
+
 		anim = GetComponentInChildren<Animator> ();
 
 		enemy = GameObject.FindGameObjectWithTag ("Enemy");
@@ -65,15 +67,18 @@ public class PlayerShooting : MonoBehaviour {
 		ammo = ammoAmount;
 		changeToMain = false;
 
-		playerpaw = GameObject.Find ("Main Camera").GetComponent<PlayerPaw> ();
+		playerpaw = GetComponent<PlayerPaw> ();
+
 		//ToastAmmoText = GameObject.FindGameObjectWithTag ("ToastAmmoText");
-		//ToastAmmoText.enabled = false;
+		ToastAmmoText.enabled = false;
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(playerpaw.is_toast)
+
+		//if(playerpaw.is_toast)
+		if(true)
 		{
 			ToastAmmoText.text = "Toast ammo: " + ammo;
 		}

@@ -53,6 +53,7 @@
 'Assets/Scripts/GUIScripts/InstructionScript.cs'
 'Assets/Scripts/GUIScripts/MenuScript.cs'
 'Assets/Scripts/GUIScripts/PauseScript.cs'
+'Assets/Scripts/HelicopterScripts/EffectsScript.cs'
 'Assets/Scripts/HelicopterScripts/ExplosionScript.cs'
 'Assets/Scripts/HelicopterScripts/HelicopterAnimatorScript.cs'
 'Assets/Scripts/HelicopterScripts/SpawnVacuum.cs'

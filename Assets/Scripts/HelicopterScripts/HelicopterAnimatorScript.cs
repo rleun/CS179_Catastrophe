@@ -11,7 +11,7 @@ public class HelicopterAnimatorScript : MonoBehaviour {
 		EnemyAIScript = GetComponent<EnemyAI> ();
 		anim = GetComponent<Animator> ();
 
-		anim.SetBool ("Take-Off", false);
+		anim.SetBool ("Take-Off", true);
 
 	}
 	

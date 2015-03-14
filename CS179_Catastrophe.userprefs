@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HelicopterScripts/HelicopterAnimatorScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HelicopterScripts/EffectsScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/HelicopterScripts/HelicopterAnimatorScript.cs" Line="27" Column="4" />
+      <File FileName="Assets/Scripts/HelicopterScripts/EffectsScript.cs" Line="24" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

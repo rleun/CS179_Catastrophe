@@ -49,38 +49,41 @@ public class SecurityAI : MonoBehaviour {
 		healthSlider.value = securityHealth.currentHealth;
 		//player alive or not alive
 		isDead = securityHealth.currentHealth > 0 ? false : true;
-		
-		//Enemy move to and attack player
-		if(!isDead || RobotHealth.currentHealth <= 0)
+
+		if(RobotHealth.currentHealth <= 0)
 		{
-			//attack player
-			Attack();
-			CurrentDistance = Vector3.Distance (PlayerPosition.position, transform.position);
-			PlayerWithInRange = CurrentDistance <= MaxDistance;
-			
-			//within  enemy's range
-			if(PlayerWithInRange)
+			//Enemy move to and attack player
+			if(!isDead)
 			{
+				//attack player
+				Attack();
+				CurrentDistance = Vector3.Distance (PlayerPosition.position, transform.position);
+				PlayerWithInRange = CurrentDistance <= MaxDistance;
 				
-				//Show healthbar
-				EnemyHealthObject.SetActive(true);
+				//within  enemy's range
+				if(PlayerWithInRange)
+				{
+					
+					//Show healthbar
+					EnemyHealthObject.SetActive(true);
+				}
+				else
+				{
+					EnemyHealthObject.SetActive(false);
+				}
 			}
 			else
 			{
 				EnemyHealthObject.SetActive(false);
-			}
-		}
-		else
-		{
-			EnemyHealthObject.SetActive(false);
-			if(!hasPlayedDeath)
-			{
-				Debug.Log("security ded");
-				ParticleSystem bigBang = Instantiate(deathParticle,new Vector3(-4.23f,12.74f,-47.69f), Quaternion.identity) as ParticleSystem;
-				bigBang.Play();
-				Destroy(bigBang, 5f);
-				hasPlayedDeath = true;
-				//gameObject.SetActive(false);
+				if(!hasPlayedDeath)
+				{
+					Debug.Log("security ded");
+					ParticleSystem bigBang = Instantiate(deathParticle,new Vector3(-4.23f,12.74f,-47.69f), Quaternion.identity) as ParticleSystem;
+					bigBang.Play();
+					Destroy(bigBang, 1f);
+					hasPlayedDeath = true;
+					//gameObject.SetActive(false);
+				}
 			}
 		}
 	}

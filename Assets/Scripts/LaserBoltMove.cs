@@ -24,7 +24,7 @@ public class LaserBoltMove : MonoBehaviour
 	//Destroy laser bolt
 	void OnCollisionEnter(Collision other)
 	{
-		Debug.Log (other.gameObject.name);
+//		Debug.Log (other.gameObject.name);
 		if (other.gameObject.name == "cat_paw_animated" || other.gameObject.name == "First Person Controller" || other.gameObject.name == "cat_paw_toast") 
 		{
 			if(mode1)

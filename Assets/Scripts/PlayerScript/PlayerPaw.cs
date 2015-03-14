@@ -72,7 +72,7 @@ public class PlayerPaw : MonoBehaviour {
 		{
 			if(!toast_changed)
 			{
-				Debug.Log("to_main");
+//				Debug.Log("to_main");
 				changePawToMain();
 				is_toast = false;
 				is_main = true;
@@ -144,7 +144,7 @@ public class PlayerPaw : MonoBehaviour {
 		GameObject main_camera = GameObject.Find ("Main Camera");
 		PlayerShooting cat_shooting = main_camera.GetComponent<PlayerShooting> ();
 		cat_shooting.enabled = true;
-
+		cat_shooting.shootingTimer = cat_shooting.shootingTimeDelay;
 
 		paw_toast_animator.SetTrigger("to_paw");
 		current_cat_paw = paw_toast;
@@ -164,7 +164,7 @@ public class PlayerPaw : MonoBehaviour {
 		cat_anim = paw_main.GetComponent<Animator>();
 		cat_anim.enabled = true;
 		cat_anim.SetTrigger ("reset");
-		Debug.Log ("anim = true");
+//		Debug.Log ("anim = true");
 		
 		cat_box_collider = paw_main.GetComponent<BoxCollider>();
 		cat_box_collider.enabled = true;

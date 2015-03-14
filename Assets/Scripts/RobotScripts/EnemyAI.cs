@@ -65,10 +65,19 @@ public class EnemyAI : MonoBehaviour {
 			EnemyHealthObject.SetActive(false);
 			if(!hasPlayedDeath)
 			{
+				Debug.Log("hasplayeddeath");
 				ParticleSystem bigBang = Instantiate(deathParticle,transform.position, transform.rotation) as ParticleSystem;
 				bigBang.Play();
-				Destroy(bigBang, 5f);
+				Destroy(bigBang, 5);
+				foreach(GameObject pclone in GameObject.FindGameObjectsWithTag("Particle"))
+				{
+					if(pclone.name == "Big Bang(Clone)")
+					{
+						Destroy(pclone,5);
+					}
+				}
 				hasPlayedDeath = true;
+				//transform.position = new Vector3(transform.position.x, transform.position.y, -360f);
 			}
 
 			//Spawn vacuum if helicopter dead
@@ -80,6 +89,10 @@ public class EnemyAI : MonoBehaviour {
 
 			if(gameObject.name == "robot")
 			{
+				if(!GameObject.Find("Holy Shine").GetComponent<ParticleSystem>().isPlaying)
+				{
+					GameObject.Find("Holy Shine").GetComponent<ParticleSystem>().Play();
+				}
 				GameObject toast = GameObject.Find ("toaster");
 				toast.transform.position = new Vector3(toast.transform.position.x, toast.transform.position.y, -6.5f);
 			}
@@ -126,7 +139,7 @@ public class EnemyAI : MonoBehaviour {
 		nextAttackTime = nextAttackTime + Time.deltaTime;
 		int AttackDamage = 1;
 
-		if(nextAttackTime > 1 && CurrentDistance < 2.5)
+		if(nextAttackTime > 1 && CurrentDistance < 3)
 		{
 			//Do damage
 			playerHealth.TakeDamage(AttackDamage);

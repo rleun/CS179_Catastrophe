@@ -88,7 +88,7 @@ public class PlayerHealth : MonoBehaviour {
 	{
 		playerDamaged = true;
 		currentHealth = currentHealth - amount;
-		Debug.Log ("Cat takes " + amount + " damage. HP left: " + currentHealth);
+//		Debug.Log ("Cat takes " + amount + " damage. HP left: " + currentHealth);
 		//LifeLabel.text = "Life Left: " + currentHealth;
 		//healthSlider.value = currentHealth;
 		if (currentHealth <= 0 && !isDead) {

@@ -72,8 +72,11 @@ public class PlayerAttack : MonoBehaviour {
 			}
 			else
 			{
-				enemyHealthScript = enemy.GetComponent<EnemyHealth>();
-				enemyHealthScript.TakeDamage(1);
+				if(enemy.gameObject != GameObject.Find ("Security Camera"))
+				{
+					enemyHealthScript = enemy.GetComponent<EnemyHealth>();
+					enemyHealthScript.TakeDamage(1);
+				}
 			}
 
 			timer = 0f;

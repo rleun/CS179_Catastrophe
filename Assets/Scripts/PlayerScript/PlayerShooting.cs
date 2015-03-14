@@ -18,6 +18,10 @@ public class PlayerShooting : MonoBehaviour {
 	GameObject EnemyHelicopter;
 	EnemyHealth HelicopterHealth;
 
+	//Security Camera
+	GameObject EnemySecurityCamera;
+	EnemyHealth SecurityCameraHealth;
+
 
 	float timer = .5f;
 	
@@ -27,7 +31,7 @@ public class PlayerShooting : MonoBehaviour {
 	public GameObject shootingToast;
 	public float shootForce = 10;
 	public float shootingTimeDelay;
-	float shootingTimer;
+	public float shootingTimer;
 	float changeTimer;
 	public float changeTimerDelay;
 	public int ammoAmount;
@@ -63,6 +67,10 @@ public class PlayerShooting : MonoBehaviour {
 		//Set this for Helicopter
 		EnemyHelicopter = GameObject.FindGameObjectWithTag ("Helicopter");
 		HelicopterHealth = EnemyHelicopter.GetComponent<EnemyHealth> ();
+
+		//Set this for Security camera
+		EnemySecurityCamera = GameObject.FindGameObjectWithTag ("SecurityCamera");
+		SecurityCameraHealth = EnemySecurityCamera.GetComponent<EnemyHealth> ();
 
 		ammo = ammoAmount;
 		changeToMain = false;
@@ -176,8 +184,13 @@ public class PlayerShooting : MonoBehaviour {
 						HelicopterHealth.TakeDamage(1);
 					}
 
+					if(hit.transform.tag == "SecurityCamera")
+					{
+						SecurityCameraHealth.TakeDamage(1);
+					}
 
-					Debug.Log("hit something: " + hit.transform.tag);
+
+					//Debug.Log("hit something: " + hit.transform.tag);
 					impacts[currentImpact].transform.position = hit.point;
 					impacts[currentImpact].GetComponent<ParticleSystem>().Play();
 

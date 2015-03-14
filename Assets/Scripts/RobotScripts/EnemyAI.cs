@@ -21,6 +21,10 @@ public class EnemyAI : MonoBehaviour {
 	bool isDead = false;
 	bool damaged = false;
 	float nextAttackTime = 0;
+
+	public ParticleSystem deathParticle;
+	bool hasPlayedDeath = false;
+
 	//public GameObject CustomExplosion;
 
 	// Use this for initialization
@@ -59,6 +63,27 @@ public class EnemyAI : MonoBehaviour {
 		else
 		{
 			EnemyHealthObject.SetActive(false);
+			if(!hasPlayedDeath)
+			{
+				ParticleSystem bigBang = Instantiate(deathParticle,transform.position, transform.rotation) as ParticleSystem;
+				bigBang.Play();
+				Destroy(bigBang, 5f);
+				hasPlayedDeath = true;
+			}
+
+			//Spawn vacuum if helicopter dead
+			if(gameObject.name == "helicopter")
+			{
+				GameObject vac = GameObject.Find ("VacuumRoombaPos");
+				vac.transform.position = new Vector3(vac.transform.position.x, vac.transform.position.y, -105f);
+			}
+
+			if(gameObject.name == "robot")
+			{
+				GameObject toast = GameObject.Find ("toaster");
+				toast.transform.position = new Vector3(toast.transform.position.x, toast.transform.position.y, -6.5f);
+			}
+			//gameObject.GetComponentInChildren<ParticleSystem>().Play();
 		}
 	}
 

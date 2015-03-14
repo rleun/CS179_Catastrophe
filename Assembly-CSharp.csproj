@@ -53,6 +53,9 @@
      <Compile Include="Assets\Scripts\BoxScript.cs" />
      <Compile Include="Assets\Scripts\CanvasScript.cs" />
      <Compile Include="Assets\Scripts\DoorScript.cs" />
+     <Compile Include="Assets\Scripts\HelicopterScripts\ExplosionScript.cs" />
+     <Compile Include="Assets\Scripts\HelicopterScripts\HelicopterAnimatorScript.cs" />
+     <Compile Include="Assets\Scripts\HelicopterScripts\SpawnVacuum.cs" />
      <Compile Include="Assets\Scripts\LaserBoltMove.cs" />
      <Compile Include="Assets\Scripts\LookAt.cs" />
      <Compile Include="Assets\Scripts\PauseScript.cs" />
@@ -77,6 +80,7 @@
      <Compile Include="Assets\Scripts\VacuumScript\VacuumMovement.cs" />
      <Compile Include="Assets\Scripts\playerCrossHair.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Elementals\!Readme.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />

@@ -4,8 +4,9 @@ using System.Collections;
 public class PlayerSwipe : MonoBehaviour {
 
 	public int damagePerSwipe = 1;
+	PlayerPaw paw;
 	float timer;
-
+	PlayerShooting shootingScript;
 	Animator anim;
 	int swipeHash = Animator.StringToHash ("swipe");
 
@@ -13,18 +14,32 @@ public class PlayerSwipe : MonoBehaviour {
 	void Start () 
 	{
 		anim = GetComponent<Animator> ();
+		paw = GameObject.Find ("Main Camera").GetComponent<PlayerPaw> ();
+		shootingScript = GameObject.Find ("Main Camera").GetComponent<PlayerShooting> ();
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetButton ("Fire1")) 
-		{
-			anim.SetTrigger(swipeHash);
+		//paw = GameObject.Find ("Main Camera").GetComponent<PlayerPaw> ();
 
 
+			if (Input.GetButton ("Fire1") && anim.GetCurrentAnimatorStateInfo(0).IsName("idle")) 
+			{
+				if(paw.is_toast)
+				{
+					if(shootingScript.shootingTimer <= 0)
+					{
+						anim.SetTrigger(swipeHash);
+					}
+				}
+				else
+				{
+					anim.SetTrigger(swipeHash);
+				}	
 
-		}
+			}
+
 
 	}
 }

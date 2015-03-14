@@ -10,7 +10,7 @@ public class EnemyHealth : MonoBehaviour {
 
 	SphereCollider sphereCollider;
 	ParticleSystem pSystem;
-	bool isDead;
+	public bool isDead;
 
 	private float startTime;
 	private float elapsedTime;
@@ -68,14 +68,17 @@ public class EnemyHealth : MonoBehaviour {
 		
 		
 		currentHealth -= amount;
-		enemyAIScript.currentHealth = enemyAIScript.currentHealth - 1;
-		Debug.Log ("Robot takes " + amount + " damage. HP left: " + currentHealth);
-		
-		if(currentHealth <= 0)
+		if(gameObject.name != "security_cam")
 		{
-			Debug.Log("Robot Dead");
-			Die ();
+			enemyAIScript.currentHealth = enemyAIScript.currentHealth - 1;
 		}
+			//Debug.Log ("Robot takes " + amount + " damage. HP left: " + currentHealth);
+		
+//		if(currentHealth <= 0)
+//		{
+//			Debug.Log("Robot Dead");
+//			Die ();
+//		}
 	}
 	
 	

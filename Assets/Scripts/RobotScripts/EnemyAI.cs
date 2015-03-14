@@ -26,6 +26,8 @@ public class EnemyAI : MonoBehaviour {
 	public ParticleSystem deathParticle;
 	bool hasPlayedDeath = false;
 
+	bool vacuumSpawn = false;
+
 	//public GameObject CustomExplosion;
 
 	// Use this for initialization
@@ -81,11 +83,15 @@ public class EnemyAI : MonoBehaviour {
 				//transform.position = new Vector3(transform.position.x, transform.position.y, -360f);
 			}
 
-			//Spawn vacuum if helicopter dead
-			if(gameObject.name == "helicopter")
+
+			if(gameObject.name == "helicopter" && vacuumSpawn == false)
 			{
 				GameObject vac = GameObject.Find ("VacuumRoombaPos");
-				vac.transform.position = new Vector3(vac.transform.position.x, vac.transform.position.y, -105f);
+				NavMeshAgent navMesh = vac.GetComponent<NavMeshAgent>();
+				navMesh.enabled = false;
+				vac.transform.position = new Vector3(vac.transform.position.x, vac.transform.position.y, 105f);
+				navMesh.enabled = true;
+				vacuumSpawn = true;
 			}
 
 			if(gameObject.name == "robot")

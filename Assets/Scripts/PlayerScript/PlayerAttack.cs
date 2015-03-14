@@ -34,7 +34,7 @@ public class PlayerAttack : MonoBehaviour {
 	{
 		//If Paw collides & during paw_swipe animation
 		//Debug.Log (other.gameObject);
-		if(((other.gameObject.tag == "Enemy") || (other.gameObject.tag == "SecurityCamera") || (other.gameObject.tag == "Helicopter") || (other.gameObject.tag == "Robot")) && (anim.GetCurrentAnimatorStateInfo(0).IsName("paw_swipe")))
+		if((((other.gameObject.tag == "Enemy") && (other == GameObject.Find("VacuumRoombaPos").GetComponent<MeshCollider>())) || (other.gameObject.tag == "SecurityCamera") || (other.gameObject.tag == "Helicopter") || (other.gameObject.tag == "Robot")) && (anim.GetCurrentAnimatorStateInfo(0).IsName("paw_swipe")))
 		{
 			//Debug.Log(other.gameObject);
 

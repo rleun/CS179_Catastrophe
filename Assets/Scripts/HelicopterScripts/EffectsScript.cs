@@ -10,6 +10,7 @@ public class EffectsScript : MonoBehaviour {
 	bool IsBurning = false;
 
 	float CoutDown = 1f;
+	float BurningCountDown = 5f;
 	Vector3 position;
 
 	// Use this for initialization
@@ -35,11 +36,18 @@ public class EffectsScript : MonoBehaviour {
 
 		if(!IsBurning && EnemyHealth.currentHealth <= 0)
 		{
-			GameObject Burn = Instantiate (Burning, transform.position, transform.rotation) as GameObject;
-			position.x -= 4;
-			Burn.transform.position = position;
-			Debug.Log("Got here");
-			IsBurning = true;
+			BurningCountDown -= Time.deltaTime;
+
+			if(BurningCountDown <= 0)
+			{
+				position = transform.position;
+				GameObject Burn = Instantiate (Burning, transform.position, transform.rotation) as GameObject;
+				position.x -= 4;
+				position.y +=4;
+				Burn.transform.position = position;
+				IsBurning = true;
+			}
+			
 		}
 
 	}

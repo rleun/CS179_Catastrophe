@@ -50,11 +50,11 @@ public class SecurityAI : MonoBehaviour {
 		//player alive or not alive
 		isDead = securityHealth.currentHealth > 0 ? false : true;
 
-		if(RobotHealth.currentHealth <= 0)
+		if(RobotHealth.currentHealth <= 0 && !isDead)
 		{
 			//Enemy move to and attack player
-			if(!isDead)
-			{
+		//	if(!isDead)
+		//	{
 				//attack player
 				Attack();
 				CurrentDistance = Vector3.Distance (PlayerPosition.position, transform.position);
@@ -86,7 +86,6 @@ public class SecurityAI : MonoBehaviour {
 				}
 			}
 		}
-	}
 	
 
 	void Attack()

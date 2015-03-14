@@ -10,7 +10,7 @@ public class EffectsScript : MonoBehaviour {
 	bool IsBurning = false;
 
 	float CoutDown = 1f;
-	float BurningCountDown = 5f;
+	float BurningCountDown = 7f;
 	Vector3 position;
 
 	// Use this for initialization
@@ -29,8 +29,8 @@ public class EffectsScript : MonoBehaviour {
 			GameObject explosion = Instantiate (CustomExplosion, transform.position, transform.rotation) as GameObject;
 			explosion.transform.position = position;
 
-			explosion.rigidbody.AddForce(transform.forward * 10f);
-			Destroy (explosion, 4f);
+			explosion.rigidbody.AddForce(transform.forward * 15f);
+			Destroy (explosion, 5f);
 			CoutDown = 1f;
 		}
 
@@ -42,8 +42,8 @@ public class EffectsScript : MonoBehaviour {
 			{
 				position = transform.position;
 				GameObject Burn = Instantiate (Burning, transform.position, transform.rotation) as GameObject;
-				position.x -= 4;
-				position.y +=4;
+
+
 				Burn.transform.position = position;
 				IsBurning = true;
 			}

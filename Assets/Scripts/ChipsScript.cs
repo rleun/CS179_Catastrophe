@@ -24,7 +24,7 @@ public class ChipsScript : MonoBehaviour {
 		if(col.name == "First Person Controller" || col.name == "cat_paw_animated")
 		{	
 			Number = Random.Range(1,10);
-			if(Number <= 6)
+			if(Number <= 5)
 			{
 				PlayerHealth.currentHealth = PlayerHealth.currentHealth-2;
 			}

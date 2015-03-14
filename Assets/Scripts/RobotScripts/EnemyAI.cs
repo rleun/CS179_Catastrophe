@@ -10,6 +10,7 @@ public class EnemyAI : MonoBehaviour {
 	NavMeshAgent nav;           //	nav mesh agent.
 	public float CurrentDistance;
 	public bool PlayerWithInRange;
+	public int MaxAttackRange;
 	
 	//Enemy Health UI
 	public GameObject EnemyHealthObject;
@@ -139,7 +140,7 @@ public class EnemyAI : MonoBehaviour {
 		nextAttackTime = nextAttackTime + Time.deltaTime;
 		int AttackDamage = 1;
 
-		if(nextAttackTime > 1 && CurrentDistance < 3)
+		if(nextAttackTime >= 2.8 && CurrentDistance < MaxAttackRange)
 		{
 			//Do damage
 			playerHealth.TakeDamage(AttackDamage);

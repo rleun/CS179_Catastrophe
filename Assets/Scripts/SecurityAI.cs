@@ -29,6 +29,7 @@ public class SecurityAI : MonoBehaviour {
 
 	EnemyHealth securityHealth;
 
+	EnemyAI helicopterAI;
 
 	// Use this for initialization
 	void Awake () {
@@ -40,7 +41,7 @@ public class SecurityAI : MonoBehaviour {
 		DisplayName.text = EnemyName;
 		securityHealth = GetComponent<EnemyHealth> ();
 		healthSlider.value = securityHealth.currentHealth;
-
+		helicopterAI = GameObject.Find ("helicopter").GetComponent<EnemyAI> ();
 		PlayerPosition = player.transform;
 	}
 	
@@ -50,11 +51,11 @@ public class SecurityAI : MonoBehaviour {
 		//player alive or not alive
 		isDead = securityHealth.currentHealth > 0 ? false : true;
 
-		if(RobotHealth.currentHealth <= 0 && !isDead)
+		if(RobotHealth.currentHealth <= 0)
 		{
 			//Enemy move to and attack player
-		//	if(!isDead)
-		//	{
+			if(!isDead)
+			{
 				//attack player
 				Attack();
 				CurrentDistance = Vector3.Distance (PlayerPosition.position, transform.position);
@@ -83,10 +84,14 @@ public class SecurityAI : MonoBehaviour {
 					Destroy(bigBang, 1f);
 					hasPlayedDeath = true;
 					//gameObject.SetActive(false);
+
+					helicopterAI.MaxDistance = 40;
+
 				}
 			}
 		}
-	
+
+	}
 
 	void Attack()
 	{

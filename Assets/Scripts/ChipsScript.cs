@@ -6,27 +6,28 @@ public class ChipsScript : MonoBehaviour {
 	GameObject Player;
 	PlayerHealth PlayerHealth;
 	int Number;
+
+	Transform player;
+	float dist = 3;
 	
 	// Use this for initialization
 	void Start () {
-		
+		player = GameObject.FindGameObjectWithTag ("Player").transform;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		Player = GameObject.FindGameObjectWithTag ("Player");
 		PlayerHealth = Player.GetComponent<PlayerHealth> ();
-	}
-	
-	void OnTriggerEnter (Collider col)
-	{
 
-		if(col.name == "First Person Controller" || col.name == "cat_paw_animated")
-		{	
+		bool withinRange = Vector3.Distance(player.position,transform.position) < dist;
+		if(withinRange && Input.GetKey(KeyCode.E))
+		{
 			Number = Random.Range(1,10);
 			if(Number <= 5)
 			{
-				PlayerHealth.currentHealth = PlayerHealth.currentHealth-2;
+				PlayerHealth.TakeDamage(2);
+				
 			}
 			else
 			{
@@ -35,4 +36,6 @@ public class ChipsScript : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
+	
+
 }

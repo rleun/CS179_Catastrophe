@@ -82,9 +82,16 @@ public class SecurityAI : MonoBehaviour {
 					ParticleSystem bigBang = Instantiate(deathParticle,new Vector3(-4.23f,12.74f,-47.69f), Quaternion.identity) as ParticleSystem;
 					bigBang.Play();
 					Destroy(bigBang, 1f);
+					foreach(GameObject pclone in GameObject.FindGameObjectsWithTag("Particle"))
+					{
+						if(pclone.name == "Big Bang(Clone)")
+						{
+							Destroy(pclone,5);
+						}
+					}
 					hasPlayedDeath = true;
 					//gameObject.SetActive(false);
-
+					GetComponent<AudioSource>().Play ();
 					helicopterAI.MaxDistance = 40;
 
 				}

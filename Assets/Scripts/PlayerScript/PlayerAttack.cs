@@ -64,6 +64,7 @@ public class PlayerAttack : MonoBehaviour {
 		
 		if((timer >= timeBetweenAttacks) && hitEnemy && (playerHealth.currentHealth > 0))
 		{
+			GetComponent<AudioSource>().Play ();
 			//Attack ();
 			//Debug.Log ("enemy hit: " + enemy.gameObject);
 			if(enemy.gameObject == GameObject.Find ("VacuumRoombaPos"))

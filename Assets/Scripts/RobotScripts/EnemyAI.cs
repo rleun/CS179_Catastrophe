@@ -80,18 +80,22 @@ public class EnemyAI : MonoBehaviour {
 					}
 				}
 				hasPlayedDeath = true;
+				GetComponent<AudioSource>().Play ();
 				//transform.position = new Vector3(transform.position.x, transform.position.y, -360f);
 			}
 
 
 			if(gameObject.name == "helicopter" && vacuumSpawn == false)
 			{
+
 				GameObject vac = GameObject.Find ("VacuumRoombaPos");
 				NavMeshAgent navMesh = vac.GetComponent<NavMeshAgent>();
 				navMesh.enabled = false;
-				vac.transform.position = new Vector3(vac.transform.position.x, vac.transform.position.y, 105f);
+				vac.transform.position = new Vector3(vac.transform.position.x, vac.transform.position.y, -111.3f);
 				navMesh.enabled = true;
 				vacuumSpawn = true;
+				vac.GetComponent<AudioSource>().enabled = true;
+				vac.GetComponent<AudioSource>().Play();
 			}
 
 			if(gameObject.name == "robot")

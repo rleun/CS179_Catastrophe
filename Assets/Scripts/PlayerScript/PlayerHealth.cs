@@ -86,6 +86,7 @@ public class PlayerHealth : MonoBehaviour {
 	
 	public void TakeDamage (int amount)
 	{
+		GetComponent<AudioSource> ().Play ();
 		playerDamaged = true;
 		currentHealth = currentHealth - amount;
 //		Debug.Log ("Cat takes " + amount + " damage. HP left: " + currentHealth);

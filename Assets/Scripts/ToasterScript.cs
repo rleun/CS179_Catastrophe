@@ -36,7 +36,7 @@ public class ToasterScript : MonoBehaviour {
 				anim.SetTrigger ("pop");
 			}
 		}
-		else if(anim.GetCurrentAnimatorStateInfo(0).IsName ("Pick up toast") && Input.GetKey (KeyCode.E))
+		else if(anim.GetCurrentAnimatorStateInfo(0).IsName ("Pick up toast") && Input.GetKey (KeyCode.E) && withinRange)
 		{
 			//switch cat paw
 			anim.SetTrigger("pickedUpToast");

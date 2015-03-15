@@ -145,7 +145,7 @@ public class PlayerShooting : MonoBehaviour {
 		{
 			timer -= Time.deltaTime;
 
-
+			GetComponent<AudioSource>().Play ();
 
 			//Impact
 			if(timer <= 0)
@@ -165,6 +165,7 @@ public class PlayerShooting : MonoBehaviour {
 					Transform clone;
 //					clone = Instantiate(shootingToast, transform.position, transform.position);
 //					clone.rigidbody.AddForce(clone.transform.forward*shootForce);
+
 
 
 

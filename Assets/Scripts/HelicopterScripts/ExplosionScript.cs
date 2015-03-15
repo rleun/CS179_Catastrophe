@@ -21,7 +21,8 @@ public class ExplosionScript : MonoBehaviour {
 	{
 		if(col.name == "First Person Controller" || col.name == "cat_paw_animated")
 		{
-			PlayerHealth.currentHealth = PlayerHealth.currentHealth-1;
+
+			PlayerHealth.TakeDamage(1);
 			Destroy(gameObject);
 		}
 	}

@@ -30,7 +30,7 @@ public class SecurityAI : MonoBehaviour {
 	EnemyHealth securityHealth;
 
 	EnemyAI helicopterAI;
-
+	GameObject laser;
 	// Use this for initialization
 	void Awake () {
 		
@@ -43,6 +43,7 @@ public class SecurityAI : MonoBehaviour {
 		healthSlider.value = securityHealth.currentHealth;
 		helicopterAI = GameObject.Find ("helicopter").GetComponent<EnemyAI> ();
 		PlayerPosition = player.transform;
+		laser = GameObject.Find ("LaserSpawn");
 	}
 	
 	// Update is called once per frame
@@ -79,7 +80,7 @@ public class SecurityAI : MonoBehaviour {
 				if(!hasPlayedDeath)
 				{
 					Debug.Log("security ded");
-					ParticleSystem bigBang = Instantiate(deathParticle,new Vector3(-4.23f,12.74f,-47.69f), Quaternion.identity) as ParticleSystem;
+					ParticleSystem bigBang = Instantiate(deathParticle,new Vector3(-3.319f,11.93f,-47.334f), Quaternion.identity) as ParticleSystem;
 					bigBang.Play();
 					Destroy(bigBang, 1f);
 					foreach(GameObject pclone in GameObject.FindGameObjectsWithTag("Particle"))
@@ -111,6 +112,8 @@ public class SecurityAI : MonoBehaviour {
 			//Do damage
 			GameObject projectile = Instantiate(LaserBolt, LaserSpawn.position, LaserSpawn.rotation) as GameObject;
 			projectile.rigidbody.velocity = transform.forward * 10f;
+
+			laser.GetComponent<AudioSource>().Play();
 
 			nextAttackTime = 0;
 		}

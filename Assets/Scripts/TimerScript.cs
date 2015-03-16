@@ -10,6 +10,7 @@ public class TimerScript : MonoBehaviour {
 	GameObject gameoverText;
 	GameObject player;
 	PlayerHealth playerHealth;
+	public Font font;
 
 	// Use this for initialization
 	void Start () {
@@ -17,11 +18,12 @@ public class TimerScript : MonoBehaviour {
 		playerHealth = player.GetComponent<PlayerHealth>();
 		Timer = new GameObject ();
 		Timer.AddComponent<GUIText> ();
-		Timer.transform.position = new Vector3 (0.7f,1.0f,0.0f);
+		Timer.transform.position = new Vector3 (0.8f,.95f,0.0f);
 		Timer.guiText.fontSize = 30;
 		Timer.guiText.color = Color.yellow;
 		timeLeft= 60* (float)minutes;
 		minutes = (int)timeLeft / 60;
+		Timer.guiText.font = font;
 		Timer.guiText.text = "Timer: " + minutes + ":" + "00";
 	
 	}

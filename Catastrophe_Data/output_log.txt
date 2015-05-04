@@ -1,11 +1,11 @@
 Initialize engine version: 4.6.1f1 (d1db7a1b5196)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4052]
-    Renderer: NVIDIA GeForce GTS 250
-    Vendor:   NVIDIA
-    VRAM:     997 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.1140]
+    Renderer: AMD Radeon HD 7640G
+    Vendor:   ATI
+    VRAM:     1773 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\Richel\Documents\GitHub\CS179_Catastrophe\Catastrophe_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Richel\Documents\GitHub\CS179_Catastrophe\Catastrophe_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -17,8 +17,8 @@ Platform assembly: C:\Users\Richel\Documents\GitHub\CS179_Catastrophe\Catastroph
 Loading C:\Users\Richel\Documents\GitHub\CS179_Catastrophe\Catastrophe_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Richel\Documents\GitHub\CS179_Catastrophe\Catastrophe_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Richel\Documents\GitHub\CS179_Catastrophe\Catastrophe_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.034 seconds
-desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+- Completed reload, in  0.205 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\Richel\Documents\GitHub\CS179_Catastrophe\Catastrophe_Data\Managed\System.Core.dll (this message is harmless)
@@ -27,15 +27,43 @@ Hello
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 2.177578 ms
+UnloadTime: 5.367963 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 248.
+Total: 1.642460 ms (FindLiveObjects: 0.031855 ms CreateObjectMapping: 0.017277 ms MarkObjects: 0.332055 ms  DeleteObjects: 0.011338 ms)
+
+UnloadTime: 1.010205 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 241.
+Total: 1.312024 ms (FindLiveObjects: 0.011878 ms CreateObjectMapping: 0.014038 ms MarkObjects: 0.218130 ms  DeleteObjects: 0.012418 ms)
+
+UnloadTime: 0.989687 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 248.
+Total: 1.565791 ms (FindLiveObjects: 0.127422 ms CreateObjectMapping: 0.022676 ms MarkObjects: 0.281842 ms  DeleteObjects: 0.016197 ms)
+
+UnloadTime: 1.027482 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 209.
+Total: 1.280709 ms (FindLiveObjects: 0.012958 ms CreateObjectMapping: 0.016197 ms MarkObjects: 0.218670 ms  DeleteObjects: 0.014578 ms)
+
+Hello
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 1.301226 ms
 Failed to create agent because it is not close enough to the NavMesh
  
 (Filename:  Line: 648)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2503.
-Total: 0.746631 ms (FindLiveObjects: 0.071386 ms CreateObjectMapping: 0.019016 ms MarkObjects: 0.353713 ms  DeleteObjects: 0.009654 ms)
+Total: 2.573836 ms (FindLiveObjects: 0.178716 ms CreateObjectMapping: 0.045353 ms MarkObjects: 0.729442 ms  DeleteObjects: 0.023756 ms)
 
 Platform assembly: C:\Users\Richel\Documents\GitHub\CS179_Catastrophe\Catastrophe_Data\Managed\Boo.Lang.dll (this message is harmless)
 Can not play a disabled audio source
@@ -45,116 +73,4 @@ Can not play a disabled audio source
 hasplayeddeath
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 377)
-
-to_toast
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-anim = false
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-to_toast
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-anim = false
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-to_toast
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-anim = false
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 377)
-
-security ded
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ExplosionScript.OnTriggerEnter (UnityEngine.Collider col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at ExplosionScript.OnTriggerEnter (UnityEngine.Collider col) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-hasplayeddeath
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-acti chips
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum takes 1 damage. HP left: 9
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum takes 1 damage. HP left: 8
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum takes 1 damage. HP left: 7
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum takes 1 damage. HP left: 6
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum takes 1 damage. HP left: 5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum takes 1 damage. HP left: 4
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum takes 1 damage. HP left: 3
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum takes 1 damage. HP left: 2
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum takes 1 damage. HP left: 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum takes 1 damage. HP left: 0
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vacuum Dead
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 9.604691 ms
-Failed to create agent because it is not close enough to the NavMesh
- 
-(Filename:  Line: 648)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 2505.
-Total: 0.770914 ms (FindLiveObjects: 0.072849 ms CreateObjectMapping: 0.020772 ms MarkObjects: 0.397598 ms  DeleteObjects: 0.009069 ms)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 377)
 
